@@ -57,7 +57,7 @@ server.get('/about', function(request, response){
 })
 
 
-var port = 8080
+var port = process.env.PORT
 
 server.listen(port, () => {
     console.log('Server running on port: '+port)
